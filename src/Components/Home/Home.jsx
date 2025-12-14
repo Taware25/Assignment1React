@@ -5,7 +5,7 @@ import logo from '../../assets/avataaars.svg'
 export default function Home() {
   return <>
   
-    <div className={`d-flex justify-content-center align-items-center text-white flex-column ${style.home}`}>
+    <div className={`d-flex justify-content-center align-items-center text-white flex-column ${style.home}`} style={{paddingTop: '170px' , paddingBottom: '90px'}}>
       <img src={logo} alt="logo" className={`mb-3 ${style.img}`} />
       <h2 className='fw-bolder fs-1 mb-3 pt-4'>START FRAMEWORK</h2>
       <div className='d-flex align-items-center justify-content-center mb-3'>
