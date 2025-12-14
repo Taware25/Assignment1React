@@ -3,7 +3,7 @@ import style from './Contact.module.css'
 
 export default function Contact() {
   return <>
-    <div className={`pt-4 ${style.contact}`}>
+    <div className={`${style.contact}`} style={{paddingTop: '150px'}}>
       <h2 className='fw-bolder text-center fs-1 mb-3' style={{color: 'rgb(44, 62, 80)'}}>CONTACT SECTION</h2>
       <div className='d-flex align-items-center justify-content-center mb-3'>
               <div className={`me-3 ${style.line}`}></div>

@@ -4,7 +4,7 @@ import style from './Navbar.module.css'
 
 export default function Navbar() {
   return <>
-    <nav className={`navbar navbar-expand-lg p-4 ${style.nav}`}>
+    <nav className={`navbar navbar-expand-lg p-4 ${style.nav} position-fixed`}>
           <div className="container">
             <NavLink className="navbar-brand text-white fs-2 fw-bolder" to={'/'}>START FRAMEWORK</NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
