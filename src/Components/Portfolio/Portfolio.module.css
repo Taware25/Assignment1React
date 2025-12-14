@@ -1,0 +1,76 @@
+.portfolio {
+  width: 100%;
+  min-height: 82vh;
+}
+
+.line {
+  background-color: #2C3E50;
+  height: 4px;
+  width: 80px;
+}
+
+.portfolioItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolioHover {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioItem:hover .portfolioHover {
+  opacity: 1;
+}
+
+.portfolioItem {
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.portfolioItem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.portfolioHover {
+  border-radius: inherit;
+}
+
+/* Modal for clicked image */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13,110,253,0.25);
+  z-index: 1050;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent img {
+  width: 600px;
+  max-width: 90vw;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
